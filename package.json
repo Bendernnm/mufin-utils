@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "p24": "------------------------------------------------------------------------",
+    "p24:waster": "node src/banks/p24/modules/cards/waster/cmd",
+    "p24:waster -4": "node src/banks/p24/modules/cards/waster/cmd 1",
+    "p24:waster -d": "node src/banks/p24/modules/cards/waster/cmd 0 ./file.xlsx"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Bendernnm/mufin-utils.git"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "xlsx2json": "^1.0.0"
+  }
 }
